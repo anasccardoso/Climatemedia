@@ -12,6 +12,8 @@ from sklearn.metrics import confusion_matrix, classification_report
 from nltk.tokenize import RegexpTokenizer
 from transformers import BertTokenizer, TFBertModel, BertConfig, TFBertForSequenceClassification
 import matplotlib.pyplot as plt
+from sklearn.metrics import f1_score
+from sklearn.metrics import classification_report
 
 # Import dataset
 df = pd.read_excel('tweets.xlsx') # add the excel file with the random sample of tweets annotated according to their relevance to climate change
